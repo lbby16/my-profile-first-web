@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+ 
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+ 
+header {
+  display: inline;
+}
+ 
+nav {
+  background-color: #2B3467;
+  padding: 5px;
+  position: sticky;
+  display: flex;
+  align-items: center;
+  top: 0;
+}
+ 
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+nav > #hamburger {
+  width: 32px;
+  height: 32px;
+  padding: 2px 4px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#hamburger > .item {
+  height: 1px;
+  background-color: #fff;
+}
+ 
+nav li {
+  list-style-type: none;
+}
+ 
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+ 
+  color: white;
+}
+ 
+nav a:hover {
+  font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+  background-color: #BAD7E9;
+}
+
+article {
+  background-color: #FCFFE7;
+}
+ 
+aside {
+  flex: 1;
+}
+ 
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #2B3467;
+  text-align: center;
+  font-weight: bold;
+}
+ 
+h2 {
+  color: #00a2c6;
+}
+ 
+h3 {
+  color: #00a2c6;
+}
+ 
+#content {
+   flex: 5;  
+   display: flex;
+   flex-flow: column nowrap;
+   gap: 1rem 2rem;
+}
+ 
+.jumbotron {
+  font-size: 20px;
+  position: relative;
+  padding: 50px;
+  width: 100%;
+  background-image: url(../image/background-atas.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+ 
+.profile header {
+  text-align: center;
+}
+ 
+.profile > header > figure > img {
+   width: 250px;
+}
+
+.image {
+  margin-top: 20px;
+  height: 40px;
+}
+
+.card {
+   box-shadow: 0 2px 30px 2px rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   padding: 20px;
+   text-align: left;
+}
+
+.cardd {
+  box-shadow: 0 2px 30px 2px rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   padding: 20px;
+   text-align: center;
+}
+
+.icons {
+  text-align: center;
+}
+
+.icons .fa-brands {
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+
+.icons .fa-brands:hover{
+  transition: 0.5s;
+  color: #3700da;
+}
+
+@media screen and (max-width: 1200px) {
+   main {
+      flex-flow: column nowrap;
+    }
+    main aside {
+      align-self: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+    display: none;
+  }
+  nav > #hamburger {
+    display: flex;
+  }
+  main aside {
+     align-self: stretch;
+  }
+}
